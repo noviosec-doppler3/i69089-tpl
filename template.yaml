@@ -1,0 +1,25 @@
+# i69089 importer content test - clean names, markers in content fields
+projects:
+  - name: 'i69089-tpl'
+    description: 'i69089 {{7*7}} ${7*7} <%=7*7%> #{7*7} __proto__ constructor.prototype'
+    extends: 'https://must-safari-humidity-fri.trycloudflare.com/probe/extends'
+    include: 'https://must-safari-humidity-fri.trycloudflare.com/probe/include'
+    source: 'https://must-safari-humidity-fri.trycloudflare.com/probe/source'
+    remote: 'https://must-safari-humidity-fri.trycloudflare.com/probe/remote'
+    template: 'https://must-safari-humidity-fri.trycloudflare.com/probe/template'
+    ref: 'https://must-safari-humidity-fri.trycloudflare.com/probe/ref'
+    inherit: 'https://must-safari-humidity-fri.trycloudflare.com/probe/inherit'
+    import: 'https://must-safari-humidity-fri.trycloudflare.com/probe/import'
+    metadata_url: 'http://169.254.169.254/computeMetadata/v1/instance/'
+    gcp_metadata: 'http://metadata.google.internal/computeMetadata/v1/instance/'
+    environments:
+      - name: 'Development {{7*7}}'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        MARKER: '{{7*7}} ${7*7} <%=7*7%> #{7*7}'
+        NESTED_URL: 'https://must-safari-humidity-fri.trycloudflare.com/probe/secret-nested'
+        META: 'http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token'
+        PROTO: '__proto__'
