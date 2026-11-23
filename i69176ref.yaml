@@ -1,0 +1,12 @@
+projects:
+  - name: 'i69176dst'
+    description: 'i69176 reference visibility test'
+    environments:
+      - name: 'Development'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        COPY_R: '${i69176src.dev.RSTR69176}'
+        COPY_P: '${i69176src.dev.PLAIN69176}'
