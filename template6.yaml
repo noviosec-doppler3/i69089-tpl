@@ -1,0 +1,11 @@
+projects:
+  - name: 'i69089-tpl6'
+    description: 'cross-project ref'
+    environments:
+      - name: 'Development'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        REF_OTHER: '${i69089-tpl4.dev.MARKER_A}'

@@ -1,0 +1,12 @@
+projects:
+  - name: 'i69089-edgea2'
+    description: 'dup keys'
+    environments:
+      - name: 'E'
+        slug: 'edge'
+        configs:
+          - slug: 'edge'
+    secrets:
+      edge:
+        DUP: 'first'
+        DUP: 'second'

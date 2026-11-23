@@ -1,0 +1,11 @@
+projects:
+  - name: 'i69089-tpl7'
+    description: 'trav and url ref'
+    environments:
+      - name: 'Development'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        REF_TRAV: '${../../etc/passwd}'

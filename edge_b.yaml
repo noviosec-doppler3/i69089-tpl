@@ -1,0 +1,11 @@
+projects:
+  - name: 'i69089-edgeb'
+    description: 'js function tag'
+    environments:
+      - name: 'E'
+        slug: 'edge'
+        configs:
+          - slug: 'edge'
+    secrets:
+      edge:
+        FN: !!js/function 'function(){return 7*7}'
