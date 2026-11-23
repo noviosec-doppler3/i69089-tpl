@@ -1,0 +1,14 @@
+projects:
+  - name: 'i69089-tpl3'
+    description: 'i69089 {{7*7}} ${7*7} <%=7*7%> #{7*7} __proto__ constructor.prototype'
+    environments:
+      - name: 'Development'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        MARKER_A: '{{7*7}} ${7*7} <%=7*7%> #{7*7}'
+        MARKER_B: '49?'
+        URL_REF: 'https://must-safari-humidity-fri.trycloudflare.com/probe/secret-nested'
+        META: 'http://169.254.169.254/computeMetadata/v1/instance/'
