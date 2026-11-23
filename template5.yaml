@@ -1,0 +1,11 @@
+projects:
+  - name: 'i69089-tpl5'
+    description: 'desc ref ${7*7}'
+    environments:
+      - name: 'Development'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        PLAIN: 'plainvalue'
