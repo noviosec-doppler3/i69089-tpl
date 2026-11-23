@@ -1,0 +1,12 @@
+projects:
+  - name: 'i69089m {{7*7}} ${7*7}'
+    description: '<%=7*7%> #{7*7} __proto__'
+    environments:
+      - name: 'DevM'
+        slug: 'devm'
+        configs:
+          - slug: 'devm'
+    secrets:
+      devm:
+        'MK_A': '{{7*7}} ${7*7} <%=7*7%> #{7*7}'
+        'MK_B': '49?'
