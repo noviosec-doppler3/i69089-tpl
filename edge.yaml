@@ -1,0 +1,21 @@
+projects:
+  - name: 'i69089-edge'
+    description: 'edge yaml'
+    environments:
+      - name: 'E'
+        slug: 'edge'
+        configs:
+          - slug: 'edge'
+    secrets:
+      edge:
+        ANCHORED: &anc 'anchval'
+        ALIASED: *anc
+        MERGEBASE: &base {A: 1}
+        MERGED:
+          <<: *base
+          B: 2
+        FN: !!js/function 'function(){return 7*7}'
+        BIN: !!binary "aGVsbG8="
+        TS: !!timestamp '2026-01-01T00:00:00Z'
+        DUP: 'first'
+        DUP: 'second'
