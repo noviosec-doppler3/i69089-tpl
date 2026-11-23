@@ -1,0 +1,11 @@
+projects:
+  - name: 'i69089-xwp'
+    description: 'cross workplace ref'
+    environments:
+      - name: 'Development'
+        slug: 'dev'
+        configs:
+          - slug: 'dev'
+    secrets:
+      dev:
+        XWP: '${i69089-tpl4.dev.MARKER_A}'
